@@ -1,0 +1,161 @@
+.nav-link{
+    font-size: 1.1em;
+}
+
+.navbar li{
+    margin-right: 15px;
+}
+
+.navbar li :hover{
+    transition: 0.4s linear;
+    background: linear-gradient(rgb(253, 253, 253), rgb(196, 196, 196));
+}
+
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.container-fluid{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.bg-image{
+    background-image: url('https://www.friscenes.ch/wp-content/uploads/2018/01/background-pattern-design-31.jpg');
+}
+
+.logo{
+    height: 28px;
+}
+
+.forma{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 350px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 25px;
+}
+
+.carousel-inner{
+    position: relative;
+}
+
+.carousel-inner h3{
+    color: black;
+    font-size: 3.5vw;
+}
+
+.carousel-inner h1{
+    color: black;
+    font-size: 4.5vw;
+}
+
+.carousel-inner img{
+    transform: translateY(-3%);
+    width: 100%;
+    margin-top: 3%;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+}
+
+.carousel-indicators{
+    position: absolute;
+    height: 50px;
+    top: 92%;
+}
+
+.carousel{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiz{
+    background-color: rgb(243, 243, 243);
+    margin-top: 10px;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.rozdil{
+    width: 85%;
+}
+
+.btn{
+    margin-top: 15px;
+}
+
+.quiz p{
+    font-weight: bold;
+}
+
+
+.popup {
+	width:650px;
+	height:200px;
+	position: fixed;
+	z-index:100;
+	border:1px solid #074776;
+	padding:10px;
+	background-image:url(../file/popup_bg.png);
+	background-position:left top;
+	background-repeat: no-repeat;
+	background-color:#F6F6F6;
+	border-radius:10px;
+}
+.popup_form {
+	float: right;
+	margin-right:10px;
+	margin-top:20px;
+}
+.popup_inp {
+	height:30px;
+	border-radius:10px;
+	background-color:#F1F1F1;
+	border:2px solid #074776;
+	text-align: center;
+	margin:10px;
+}
+
+.popup_submit {
+	height:30px;
+	width:70px;
+	border-radius:10px;
+	background-color:#b1b1b1;
+	border:2px solid #074776;
+	text-align: center;
+	margin:10px;
+	margin-left:45px;
+}
+.popup_close {
+	float: right;
+	border-radius:10px;
+	border:1px solid red;
+	width:30px;
+	height:30px;
+	text-align: center;
+	padding-top:5px;
+	cursor: pointer;
+}
+
+.popup_body {
+	opacity:0.8;
+	background-color:#074776;
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:50;
+}

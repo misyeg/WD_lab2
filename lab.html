@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="controller.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="bg-image">
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <div class="container">
+                    <a href="lab.html" class="navbar-brand"><img src="logo.png" class="logo">  3Quiz</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="lab.html" class="nav-link">Головна</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link">Профіль</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">Про додаток</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="log.html" class="nav-link">Вхід</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="sign.html" class="nav-link">Реєстрація</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" style="background-color: white; margin-bottom: 20px; margin-top: 20px; border-radius: 25px; padding: 20px;">
+                    <div class="quiz">
+                        <h5 style="text-align: left;">Опитування 1</h5>
+                        <form role="form" id="form1" onsubmit="ok()">
+                            <p>Питання 1</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 2</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 3</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 3
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-success" id="sub1">Сдати</button>
+                        </form>
+                    </div>
+                    <div class="quiz">
+                        <h5 style="text-align: left;">Опитування 2</h5>
+                        <form role="form" id="form2" onsubmit="ok()">
+                            <p>Питання 1</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 2</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-success" id="sub2">Сдати</button>
+                        </form>
+                    </div>
+                    <div class="quiz">
+                        <h5 style="text-align: left;">Опитування 3</h5>
+                        <form role="form" id="form3" onsubmit="ok()">
+                            <p>Питання 1</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 2</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 3</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 4</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ4">
+                                    <input class="form-check-input" type="radio" name="answ4"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ4">
+                                    <input class="form-check-input" type="radio" name="answ4"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ4">
+                                    <input class="form-check-input" type="radio" name="answ4"> Відповідь 3
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-success" id="sub3">Сдати</button>
+                        </form>
+                    </div>
+                    <div class="quiz">
+                        <h5 style="text-align: left;">Опитування 4</h5>
+                        <form role="form" id="form4" onsubmit="ok()">
+                            <p>Питання 1</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 2</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-success" id="sub4">Сдати</button>
+                        </form>
+                    </div>
+                    <div class="quiz">
+                        <h5 style="text-align: left;">Опитування 5</h5>
+                        <form role="form" id="form5" onsubmit="ok()">
+                            <p>Питання 1</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ1">
+                                    <input class="form-check-input" type="radio" name="answ1"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 2</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ2">
+                                    <input class="form-check-input" type="radio" name="answ2"> Відповідь 3
+                                </label>
+                            </div>
+
+                            <hr class="rozdil">
+
+                            <p>Питання 3</p>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 1
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 2
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="answ3">
+                                    <input class="form-check-input" type="radio" name="answ3"> Відповідь 3
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-success" id="sub5">Сдати</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8" style=" background-color: rgb(16, 164, 190); height: 100px; text-align: center;">
+                    <div class="container" style="margin-top: 15px;">
+                        <p style="margin: 0;">©Всі права захищені</p>
+                        <p style="margin: 0;">3Quiz - 2023</p>
+                        <p style="margin: 0;">Підтримка - support@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-2" ></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

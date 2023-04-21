@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="controller.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="bg-image">
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <div class="container">
+                    <a href="lab.html" class="navbar-brand"><img src="logo.png" class="logo">  3Quiz</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a href="lab.html" class="nav-link">Головна</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link">Профіль</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">Про додаток</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="log.html" class="nav-link">Вхід</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="sign.html" class="nav-link">Реєстрація</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8" style="background-color: white; margin-bottom: 20px; margin-top: 20px; border-radius: 25px; height: 78.8vh; display: flex;">
+                    <div class="forma">
+                        <form role="form" onsubmit="registration()">
+                            <div class="form-group">
+                                <label for="name">Ім'я</label>
+                                <input type="name" class="form-control" id="name_sign" placeholder="Введіть своє ім'я" required>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label for="email_sign">Email</label>
+                                <input type="email" class="form-control" id="email_sign" placeholder="Введіть свій email" required>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label for="pass_sign">Пароль</label>
+                                <input type="password" class="form-control" id="pass_sign" placeholder="Придумайте пароль" required>
+                            </div>
+                            <hr>
+                            <div class="form-check form-check-inline" style="margin-left: 60px; margin-bottom: 15px;">
+                                <label class="form-check-label" for="optionsRadios">
+                                    <input id="sex_sign" class="form-check-input" type="radio" name="optionsRadios" id="radio1" value="male"> Чоловік
+                                </label>
+                            </div>
+                            
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label" for="optionsRadios">
+                                    <input id="sex_sign" class="form-check-input" type="radio" name="optionsRadios" id="radio2" value="female"> Жінка
+                                </label>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label  for="inputDate">Введіть дату народження:</label>
+                                <input id="date_sign" type="date" class="form-control" required>
+                              </div>
+                            <button type="submit" class="btn btn-success" style="margin: 0 auto; display: block;">Зареєструватися</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-8" style=" background-color: rgb(16, 164, 190); height: 100px; text-align: center;">
+                    <div class="container" style="margin-top: 15px;">
+                        <p style="margin: 0;">©Всі права захищені</p>
+                        <p style="margin: 0;">3Quiz - 2023</p>
+                        <p style="margin: 0;">Підтримка - support@gmail.com</p>
+                    </div>
+                </div>
+                <div class="col-md-2" ></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
